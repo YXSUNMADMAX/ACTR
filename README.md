@@ -15,14 +15,14 @@ pip install tensorboardX termcolor timm tqdm requests pandas
 # Evaluation
 - Download pre-trained weights on [Link](https://drive.google.com/drive/folders/1ooKn4hJ65N352wYuWOnMXnjaVT1e0pVn?usp=sharing)
 
-Result on SPair-71k:
+- Result on SPair-71k:
       python test.py --datapath "/path_to_dataset" --pretrained "/path_to_pretrained_model/spair" --benchmark spair
 
-Results on PF-PASCAL:
+- Results on PF-PASCAL:
       python test.py --datapath "/path_to_dataset" --pretrained "/path_to_pretrained_model/pfpascal" --benchmark pfpascal
 
 # Acknowledgement <a name="Acknowledgement"></a>
-We borrow code from public projects (huge thanks to all the projects). We mainly borrow code from  [CATs](https://github.com/SunghwanHong/Cost-Aggregation-transformers). 
+We borrow code from public projects (Thanks a lot !!!). We mainly borrow code from [CATs](https://github.com/SunghwanHong/Cost-Aggregation-transformers). 
 
 ### BibTeX
 If you find this research useful, please consider citing:
