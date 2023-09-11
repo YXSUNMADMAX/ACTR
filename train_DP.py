@@ -71,7 +71,7 @@ if __name__ == "__main__":
     parser.add_argument('--mlp-ratio', type=int, default=4)
     parser.add_argument('--freeze', type=boolean_string, nargs='?', const=True, default=True)
     parser.add_argument('--augmentation', type=boolean_string, nargs='?', const=True, default=True)
-    parser.add_argument('--ibot_ckp_file', type=str, default='./')
+    parser.add_argument('--ibot_ckp_file', type=str, default='./') ### donot forget this argument for iBOT ckp!!!!
 
     # Seed
     args = parser.parse_args()
