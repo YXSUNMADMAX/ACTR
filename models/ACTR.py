@@ -347,6 +347,9 @@ class FeatureExtractionHyperPixel_VIT(nn.Module):
             state_dict = {k.replace("backbone.", ""): v for k, v in state_dict.items()}
             msg = self.backbone.load_state_dict(state_dict, strict=False)
             print('Pretrained weights found at {} and loaded with msg: {}'.format(ibot_ckp_file, msg))
+        else:
+            print('No iBot ckp loaded!!!')
+            raise RuntimeError
 
         self.feature_size = feature_size
 
